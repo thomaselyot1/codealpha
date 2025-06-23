@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ajiboye John | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- the navigation section -->
+
+  <nav>
+    <div class="logo">Ajiboye John</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </nav>
+
+
+  <!--the hero-section  -->
+
+  <section id="home" class="section">
+    <div class="content">
+      <h1>Hi, I'm Ajiboye John</h1>
+      <p>Web Developer | Front-End Specialist | Tech Enthusiast</p>
+    </div>
+  </section>
+
+  <!-- the about me section -->
+
+  <section id="about" class="section scroll-reveal">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate web developer with experience in building responsive web applications using modern web technologies. I love turning ideas into reality and creating user-friendly interfaces.
+    </p>
+  </section>
+
+
+  <!-- the resume section -->
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <div class="resume-block">
+      <h3>Experience</h3>
+      <p><strong>Freelance Front-End Developer</strong><br>2022 - Present</p>
+      <p>Built and maintained websites using HTML, CSS, JavaScript, and React. Focused on responsive design and performance optimization.</p>
+    </div>
+
+
+    <!-- the education section -->
+
+    <div class="resume-block">
+      <h3>Education</h3>
+      <p><strong>BSc in Computer Science <br>Federal University of Agriculture Abeokuta</strong><br>Graduated 2026</p>
+    </div>
+
+
+    <!-- the skills -->
+
+    <div class="resume-block">
+      <h3>Skills</h3>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>React.js, Bootstrap</li>
+        <li>Responsive Design</li>
+        <li>Version Control (Git, GitHub)</li>
+      </ul>
+    </div>
+  </section>
+
+
+      <!-- the portflio section  -->
+
+  <section id="portfolio" class="section">
+  <h2>Projects</h2>
+  <div class="project">
+    <h4>Task Manager App</h4>
+    <img src="images/task-manager.png" alt="Task Manager Screenshot" style="width:100%;max-width:400px;border-radius:8px;">
+    <p>$1</p>
+    <a href="https://github.com/yourusername/task-manager" target="_blank">View on GitHub</a>
+  </div>
+  <div class="project">
+    <h4>Responsive Blog Platform</h4>
+    <img src="images/blog-platform.png" alt="Blog Platform Screenshot" style="width:100%;max-width:400px;border-radius:8px;">
+    <p>$1</p>
+    <a href="https://github.com/yourusername/blog-platform" target="_blank">View on GitHub</a>
+  </div>
+  <div class="project">
+    <h4>Football News Website</h4>
+    <img src="images/football-news.png" alt="Football News Screenshot" style="width:100%;max-width:400px;border-radius:8px;">
+    <p>$1</p>
+    <a href="https://github.com/yourusername/football-news-site" target="_blank">View on GitHub</a>
+  </div>
+</section>
+
+
+      <!-- contact me section -->
+
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+
+      <!--footer part of the html  -->
+
+
+  <footer>
+    <p>&copy; 2025 Ajiboye John</p>
+  </footer>
+
+
+
+
+      <!-- the javascript code -->
+
+
+  <script>
+    
+      // the toggle menu of the website
+
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-links');
+      nav.classList.toggle('active');
+    }
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      // the alert message after form submission
+      alert("Thanks for reaching out! (Form submission simulated)");
+      this.reset();
+    });
+  </script>
+  
+  <script> 
+    function toggleMenu() {
+      const nav = document.querySelector('.nav-links');
+      nav.classList.toggle('active');
+    }
+
+    const toggle = document.createElement('button');
+    toggle.textContent = 'Toggle Dark Mode';
+    toggle.style.position = 'fixed';
+    toggle.style.bottom = '20px';
+    toggle.style.right = '20px';
+    toggle.style.padding = '10px 15px';
+    toggle.style.zIndex = '1001';
+    toggle.style.border = 'none';
+    toggle.style.borderRadius = '4px';
+    toggle.style.background = '#0d6efd';
+    toggle.style.color = '#fff';
+    document.body.appendChild(toggle);
+
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    }); 
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Toggle mobile nav menu
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.classList.toggle('active');
+}
+
+// Handle contact form submission
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  alert("Thanks for reaching out! (Form submission simulated)");
+  this.reset();
+});
+
+// Create and handle dark mode toggle button
+const toggle = document.createElement('button');
+toggle.textContent = 'Toggle Dark Mode';
+toggle.style.position = 'fixed';
+toggle.style.bottom = '20px';
+toggle.style.right = '20px';
+toggle.style.padding = '10px 15px';
+toggle.style.zIndex = '1001';
+toggle.style.border = 'none';
+toggle.style.borderRadius = '4px';
+toggle.style.background = '#0d6efd';
+toggle.style.color = '#fff';
+toggle.style.cursor = 'pointer';
+document.body.appendChild(toggle);
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  // Optionally store preference in localStorage
+  const isDark = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDark);
+});
+
+// Apply dark mode from localStorage on load
+window.addEventListener('DOMContentLoaded', () => {
+  const isDarkStored = localStorage.getItem('darkMode') === 'true';
+  if (isDarkStored) {
+    document.body.classList.add('dark-mode');
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// scroll reveal
+
+// Animate on scroll
+const revealElements = document.querySelectorAll('.scroll-reveal');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target); // Reveal only once
+    }
+  });
+}, {
+  threshold: 0.1,
+});
+
+revealElements.forEach(el => observer.observe(el));
+ 
+
+  </script>
+</body>
+</html>
